@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72AD99AA118171785563F4AC /* Pods_Profoods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F58DB809BAD6F824FC899D /* Pods_Profoods.framework */; };
+		AC08113A28015E0700D8A3BD /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08113828015E0700D8A3BD /* DishListTableViewCell.swift */; };
+		AC08113B28015E0700D8A3BD /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC08113928015E0700D8A3BD /* DishListTableViewCell.xib */; };
+		AC08113E2801623B00D8A3BD /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08113D2801623B00D8A3BD /* ListDishesViewController.swift */; };
+		AC081141280178AA00D8A3BD /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC081140280178AA00D8A3BD /* ListOrdersViewController.swift */; };
+		AC08114428017A2900D8A3BD /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08114328017A2900D8A3BD /* Order.swift */; };
+		AC08114728018ABC00D8A3BD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08114628018ABC00D8A3BD /* NetworkService.swift */; };
+		AC08114928018B9400D8A3BD /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08114828018B9400D8A3BD /* Route.swift */; };
+		AC08114B2801987C00D8A3BD /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08114A2801987C00D8A3BD /* Method.swift */; };
+		AC35675027FFE28100E50491 /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35674E27FFE28100E50491 /* DishLandscapeCollectionViewCell.swift */; };
+		AC35675127FFE28100E50491 /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC35674F27FFE28100E50491 /* DishLandscapeCollectionViewCell.xib */; };
+		AC3567542800850100E50491 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3567532800850100E50491 /* DishDetailViewController.swift */; };
+		AC35675928008C6F00E50491 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35675828008C6F00E50491 /* UIViewController+Extension.swift */; };
+		AC36644B27FECB1500F04985 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36644A27FECB1500F04985 /* String+Extension.swift */; };
+		AC572B472802994900CE8546 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC572B462802994900CE8546 /* AppError.swift */; };
+		AC681A882812434400CFDBBF /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC681A872812434400CFDBBF /* AllDishes.swift */; };
+		AC681A8B281251C500CFDBBF /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC681A8A281251C500CFDBBF /* UserDefaults+Extension.swift */; };
+		AC7E39A527FEDE9300D2FC20 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E39A427FEDE9300D2FC20 /* CardView.swift */; };
+		AC7E39A927FF189200D2FC20 /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E39A727FF189200D2FC20 /* DishPortraitCollectionViewCell.swift */; };
+		AC7E39AA27FF189200D2FC20 /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7E39A827FF189200D2FC20 /* DishPortraitCollectionViewCell.xib */; };
+		AC7E39AC27FF1EEE00D2FC20 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E39AB27FF1EEE00D2FC20 /* Dish.swift */; };
+		AC9FA0EA27FB32F0007DB48E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA0E927FB32F0007DB48E /* AppDelegate.swift */; };
+		AC9FA0EC27FB32F0007DB48E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA0EB27FB32F0007DB48E /* SceneDelegate.swift */; };
+		AC9FA0F127FB32F0007DB48E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9FA0EF27FB32F0007DB48E /* Main.storyboard */; };
+		AC9FA0F327FB32F1007DB48E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9FA0F227FB32F1007DB48E /* Assets.xcassets */; };
+		AC9FA0F627FB32F1007DB48E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9FA0F427FB32F1007DB48E /* LaunchScreen.storyboard */; };
+		AC9FA10127FB32F1007DB48E /* ProfoodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA10027FB32F1007DB48E /* ProfoodsTests.swift */; };
+		AC9FA10B27FB32F1007DB48E /* ProfoodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA10A27FB32F1007DB48E /* ProfoodsUITests.swift */; };
+		AC9FA10D27FB32F1007DB48E /* ProfoodsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA10C27FB32F1007DB48E /* ProfoodsUITestsLaunchTests.swift */; };
+		AC9FA11E27FBFDD1007DB48E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA11D27FBFDD1007DB48E /* OnboardingViewController.swift */; };
+		AC9FA12127FC0919007DB48E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA12027FC0919007DB48E /* UIView+Extension.swift */; };
+		AC9FA12327FC482F007DB48E /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA12227FC482F007DB48E /* OnboardingSlide.swift */; };
+		AC9FA12727FC7A09007DB48E /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA12627FC7A09007DB48E /* OnboardingCollectionViewCell.swift */; };
+		AC9FA12A27FD839E007DB48E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA12927FD839E007DB48E /* HomeViewController.swift */; };
+		AC9FA13427FE7FC4007DB48E /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA13227FE7FC4007DB48E /* CategoryCollectionViewCell.swift */; };
+		AC9FA13527FE7FC4007DB48E /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9FA13327FE7FC4007DB48E /* CategoryCollectionViewCell.xib */; };
+		AC9FA13727FE82A8007DB48E /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FA13627FE82A8007DB48E /* DishCategory.swift */; };
+		ACBBF0FF2805B97400E354F0 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBBF0FE2805B97400E354F0 /* ApiResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC9FA0FD27FB32F1007DB48E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC9FA0DE27FB32F0007DB48E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC9FA0E527FB32F0007DB48E;
+			remoteInfo = Profoods;
+		};
+		AC9FA10727FB32F1007DB48E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC9FA0DE27FB32F0007DB48E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC9FA0E527FB32F0007DB48E;
+			remoteInfo = Profoods;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08F58DB809BAD6F824FC899D /* Pods_Profoods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Profoods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		428E9515D8C0030347059003 /* Pods-Profoods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Profoods.release.xcconfig"; path = "Target Support Files/Pods-Profoods/Pods-Profoods.release.xcconfig"; sourceTree = "<group>"; };
+		AC08113828015E0700D8A3BD /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
+		AC08113928015E0700D8A3BD /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
+		AC08113D2801623B00D8A3BD /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
+		AC081140280178AA00D8A3BD /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
+		AC08114328017A2900D8A3BD /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		AC08114628018ABC00D8A3BD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AC08114828018B9400D8A3BD /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		AC08114A2801987C00D8A3BD /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		AC35674E27FFE28100E50491 /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC35674F27FFE28100E50491 /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		AC3567532800850100E50491 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		AC35675828008C6F00E50491 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		AC36644A27FECB1500F04985 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		AC572B462802994900CE8546 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		AC681A872812434400CFDBBF /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
+		AC681A8A281251C500CFDBBF /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		AC7E39A427FEDE9300D2FC20 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AC7E39A727FF189200D2FC20 /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC7E39A827FF189200D2FC20 /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
+		AC7E39AB27FF1EEE00D2FC20 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		AC9FA0E627FB32F0007DB48E /* Profoods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Profoods.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9FA0E927FB32F0007DB48E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC9FA0EB27FB32F0007DB48E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AC9FA0F027FB32F0007DB48E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC9FA0F227FB32F1007DB48E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC9FA0F527FB32F1007DB48E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC9FA0F727FB32F1007DB48E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9FA0FC27FB32F1007DB48E /* ProfoodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfoodsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9FA10027FB32F1007DB48E /* ProfoodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfoodsTests.swift; sourceTree = "<group>"; };
+		AC9FA10627FB32F1007DB48E /* ProfoodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfoodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9FA10A27FB32F1007DB48E /* ProfoodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfoodsUITests.swift; sourceTree = "<group>"; };
+		AC9FA10C27FB32F1007DB48E /* ProfoodsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfoodsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC9FA11D27FBFDD1007DB48E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		AC9FA12027FC0919007DB48E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AC9FA12227FC482F007DB48E /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		AC9FA12627FC7A09007DB48E /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC9FA12927FD839E007DB48E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AC9FA13227FE7FC4007DB48E /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC9FA13327FE7FC4007DB48E /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		AC9FA13627FE82A8007DB48E /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		ACBBF0FE2805B97400E354F0 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		E91A5A27941E009D7C0BC9F8 /* Pods-Profoods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Profoods.debug.xcconfig"; path = "Target Support Files/Pods-Profoods/Pods-Profoods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC9FA0E327FB32F0007DB48E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72AD99AA118171785563F4AC /* Pods_Profoods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9FA0F927FB32F1007DB48E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9FA10327FB32F1007DB48E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC08113528015DAE00D8A3BD /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AC08113628015DC800D8A3BD /* DishListTableViewCells */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		AC08113628015DC800D8A3BD /* DishListTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AC08113828015E0700D8A3BD /* DishListTableViewCell.swift */,
+				AC08113928015E0700D8A3BD /* DishListTableViewCell.xib */,
+			);
+			path = DishListTableViewCells;
+			sourceTree = "<group>";
+		};
+		AC08113C2801620600D8A3BD /* ListDishes */ = {
+			isa = PBXGroup;
+			children = (
+				AC08113D2801623B00D8A3BD /* ListDishesViewController.swift */,
+			);
+			path = ListDishes;
+			sourceTree = "<group>";
+		};
+		AC08113F2801788700D8A3BD /* ListOrders */ = {
+			isa = PBXGroup;
+			children = (
+				AC081140280178AA00D8A3BD /* ListOrdersViewController.swift */,
+			);
+			path = ListOrders;
+			sourceTree = "<group>";
+		};
+		AC08114528018A9B00D8A3BD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AC08114628018ABC00D8A3BD /* NetworkService.swift */,
+				AC08114828018B9400D8A3BD /* Route.swift */,
+				AC08114A2801987C00D8A3BD /* Method.swift */,
+				AC572B462802994900CE8546 /* AppError.swift */,
+				ACBBF0FE2805B97400E354F0 /* ApiResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AC35674D27FFE1AD00E50491 /* DishLandscapeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC35674E27FFE28100E50491 /* DishLandscapeCollectionViewCell.swift */,
+				AC35674F27FFE28100E50491 /* DishLandscapeCollectionViewCell.xib */,
+			);
+			path = DishLandscapeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		AC356752280084D500E50491 /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AC3567532800850100E50491 /* DishDetailViewController.swift */,
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
+		AC7E39A327FEDE5800D2FC20 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				AC7E39A427FEDE9300D2FC20 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		AC7E39A627FF184100D2FC20 /* DishPortraitCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC7E39A727FF189200D2FC20 /* DishPortraitCollectionViewCell.swift */,
+				AC7E39A827FF189200D2FC20 /* DishPortraitCollectionViewCell.xib */,
+			);
+			path = DishPortraitCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		AC9FA0DD27FB32F0007DB48E = {
+			isa = PBXGroup;
+			children = (
+				AC9FA0E827FB32F0007DB48E /* Profoods */,
+				AC9FA0FF27FB32F1007DB48E /* ProfoodsTests */,
+				AC9FA10927FB32F1007DB48E /* ProfoodsUITests */,
+				AC9FA0E727FB32F0007DB48E /* Products */,
+				CAC74F78C232BF9165E2F3BD /* Pods */,
+				B6B5CC6DAD49E47A77DD3E4D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC9FA0E727FB32F0007DB48E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC9FA0E627FB32F0007DB48E /* Profoods.app */,
+				AC9FA0FC27FB32F1007DB48E /* ProfoodsTests.xctest */,
+				AC9FA10627FB32F1007DB48E /* ProfoodsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC9FA0E827FB32F0007DB48E /* Profoods */ = {
+			isa = PBXGroup;
+			children = (
+				AC08114528018A9B00D8A3BD /* Networking */,
+				AC9FA11F27FC0885007DB48E /* Extensions */,
+				AC9FA11B27FBFD4D007DB48E /* CustomViews */,
+				AC9FA11A27FBFD38007DB48E /* Views */,
+				AC9FA11927FBFD2C007DB48E /* Models */,
+				AC9FA0E927FB32F0007DB48E /* AppDelegate.swift */,
+				AC9FA0EB27FB32F0007DB48E /* SceneDelegate.swift */,
+				AC9FA0EF27FB32F0007DB48E /* Main.storyboard */,
+				AC9FA0F227FB32F1007DB48E /* Assets.xcassets */,
+				AC9FA0F427FB32F1007DB48E /* LaunchScreen.storyboard */,
+				AC9FA0F727FB32F1007DB48E /* Info.plist */,
+			);
+			path = Profoods;
+			sourceTree = "<group>";
+		};
+		AC9FA0FF27FB32F1007DB48E /* ProfoodsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC9FA10027FB32F1007DB48E /* ProfoodsTests.swift */,
+			);
+			path = ProfoodsTests;
+			sourceTree = "<group>";
+		};
+		AC9FA10927FB32F1007DB48E /* ProfoodsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC9FA10A27FB32F1007DB48E /* ProfoodsUITests.swift */,
+				AC9FA10C27FB32F1007DB48E /* ProfoodsUITestsLaunchTests.swift */,
+			);
+			path = ProfoodsUITests;
+			sourceTree = "<group>";
+		};
+		AC9FA11927FBFD2C007DB48E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC9FA12227FC482F007DB48E /* OnboardingSlide.swift */,
+				AC9FA13627FE82A8007DB48E /* DishCategory.swift */,
+				AC7E39AB27FF1EEE00D2FC20 /* Dish.swift */,
+				AC08114328017A2900D8A3BD /* Order.swift */,
+				AC681A872812434400CFDBBF /* AllDishes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC9FA11A27FBFD38007DB48E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC08113F2801788700D8A3BD /* ListOrders */,
+				AC08113C2801620600D8A3BD /* ListDishes */,
+				AC356752280084D500E50491 /* DishDetail */,
+				AC9FA12827FD8357007DB48E /* Home */,
+				AC9FA11C27FBFD6F007DB48E /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC9FA11B27FBFD4D007DB48E /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				AC08113528015DAE00D8A3BD /* TableViewCells */,
+				AC7E39A327FEDE5800D2FC20 /* CardView */,
+				AC9FA12B27FE7750007DB48E /* CollectionViewCells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		AC9FA11C27FBFD6F007DB48E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AC9FA11D27FBFDD1007DB48E /* OnboardingViewController.swift */,
+				AC9FA12627FC7A09007DB48E /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AC9FA11F27FC0885007DB48E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC9FA12027FC0919007DB48E /* UIView+Extension.swift */,
+				AC36644A27FECB1500F04985 /* String+Extension.swift */,
+				AC35675828008C6F00E50491 /* UIViewController+Extension.swift */,
+				AC681A8A281251C500CFDBBF /* UserDefaults+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC9FA12827FD8357007DB48E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AC9FA12927FD839E007DB48E /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AC9FA12B27FE7750007DB48E /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AC35674D27FFE1AD00E50491 /* DishLandscapeCollectionViewCell */,
+				AC7E39A627FF184100D2FC20 /* DishPortraitCollectionViewCell */,
+				AC9FA13127FE7F84007DB48E /* CategoryCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		AC9FA13127FE7F84007DB48E /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC9FA13227FE7FC4007DB48E /* CategoryCollectionViewCell.swift */,
+				AC9FA13327FE7FC4007DB48E /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		B6B5CC6DAD49E47A77DD3E4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08F58DB809BAD6F824FC899D /* Pods_Profoods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAC74F78C232BF9165E2F3BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E91A5A27941E009D7C0BC9F8 /* Pods-Profoods.debug.xcconfig */,
+				428E9515D8C0030347059003 /* Pods-Profoods.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC9FA0E527FB32F0007DB48E /* Profoods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC9FA11027FB32F1007DB48E /* Build configuration list for PBXNativeTarget "Profoods" */;
+			buildPhases = (
+				E06F6760A07DB0B8570BBEC4 /* [CP] Check Pods Manifest.lock */,
+				AC9FA0E227FB32F0007DB48E /* Sources */,
+				AC9FA0E327FB32F0007DB48E /* Frameworks */,
+				AC9FA0E427FB32F0007DB48E /* Resources */,
+				DB40E69CE5B948B2E9C0763B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Profoods;
+			productName = Profoods;
+			productReference = AC9FA0E627FB32F0007DB48E /* Profoods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC9FA0FB27FB32F1007DB48E /* ProfoodsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC9FA11327FB32F1007DB48E /* Build configuration list for PBXNativeTarget "ProfoodsTests" */;
+			buildPhases = (
+				AC9FA0F827FB32F1007DB48E /* Sources */,
+				AC9FA0F927FB32F1007DB48E /* Frameworks */,
+				AC9FA0FA27FB32F1007DB48E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC9FA0FE27FB32F1007DB48E /* PBXTargetDependency */,
+			);
+			name = ProfoodsTests;
+			productName = ProfoodsTests;
+			productReference = AC9FA0FC27FB32F1007DB48E /* ProfoodsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC9FA10527FB32F1007DB48E /* ProfoodsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC9FA11627FB32F1007DB48E /* Build configuration list for PBXNativeTarget "ProfoodsUITests" */;
+			buildPhases = (
+				AC9FA10227FB32F1007DB48E /* Sources */,
+				AC9FA10327FB32F1007DB48E /* Frameworks */,
+				AC9FA10427FB32F1007DB48E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC9FA10827FB32F1007DB48E /* PBXTargetDependency */,
+			);
+			name = ProfoodsUITests;
+			productName = ProfoodsUITests;
+			productReference = AC9FA10627FB32F1007DB48E /* ProfoodsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC9FA0DE27FB32F0007DB48E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					AC9FA0E527FB32F0007DB48E = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					AC9FA0FB27FB32F1007DB48E = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = AC9FA0E527FB32F0007DB48E;
+					};
+					AC9FA10527FB32F1007DB48E = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = AC9FA0E527FB32F0007DB48E;
+					};
+				};
+			};
+			buildConfigurationList = AC9FA0E127FB32F0007DB48E /* Build configuration list for PBXProject "Profoods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC9FA0DD27FB32F0007DB48E;
+			productRefGroup = AC9FA0E727FB32F0007DB48E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC9FA0E527FB32F0007DB48E /* Profoods */,
+				AC9FA0FB27FB32F1007DB48E /* ProfoodsTests */,
+				AC9FA10527FB32F1007DB48E /* ProfoodsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC9FA0E427FB32F0007DB48E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9FA13527FE7FC4007DB48E /* CategoryCollectionViewCell.xib in Resources */,
+				AC08113B28015E0700D8A3BD /* DishListTableViewCell.xib in Resources */,
+				AC9FA0F627FB32F1007DB48E /* LaunchScreen.storyboard in Resources */,
+				AC7E39AA27FF189200D2FC20 /* DishPortraitCollectionViewCell.xib in Resources */,
+				AC9FA0F327FB32F1007DB48E /* Assets.xcassets in Resources */,
+				AC35675127FFE28100E50491 /* DishLandscapeCollectionViewCell.xib in Resources */,
+				AC9FA0F127FB32F0007DB48E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9FA0FA27FB32F1007DB48E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9FA10427FB32F1007DB48E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DB40E69CE5B948B2E9C0763B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Profoods/Pods-Profoods-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Profoods/Pods-Profoods-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Profoods/Pods-Profoods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E06F6760A07DB0B8570BBEC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Profoods-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC9FA0E227FB32F0007DB48E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC08113A28015E0700D8A3BD /* DishListTableViewCell.swift in Sources */,
+				AC081141280178AA00D8A3BD /* ListOrdersViewController.swift in Sources */,
+				AC08114428017A2900D8A3BD /* Order.swift in Sources */,
+				AC35675928008C6F00E50491 /* UIViewController+Extension.swift in Sources */,
+				AC9FA13427FE7FC4007DB48E /* CategoryCollectionViewCell.swift in Sources */,
+				AC9FA12327FC482F007DB48E /* OnboardingSlide.swift in Sources */,
+				AC9FA0EA27FB32F0007DB48E /* AppDelegate.swift in Sources */,
+				AC681A882812434400CFDBBF /* AllDishes.swift in Sources */,
+				AC9FA0EC27FB32F0007DB48E /* SceneDelegate.swift in Sources */,
+				AC08114B2801987C00D8A3BD /* Method.swift in Sources */,
+				AC9FA12127FC0919007DB48E /* UIView+Extension.swift in Sources */,
+				AC9FA11E27FBFDD1007DB48E /* OnboardingViewController.swift in Sources */,
+				AC3567542800850100E50491 /* DishDetailViewController.swift in Sources */,
+				AC9FA12A27FD839E007DB48E /* HomeViewController.swift in Sources */,
+				ACBBF0FF2805B97400E354F0 /* ApiResponse.swift in Sources */,
+				AC9FA13727FE82A8007DB48E /* DishCategory.swift in Sources */,
+				AC08114928018B9400D8A3BD /* Route.swift in Sources */,
+				AC08114728018ABC00D8A3BD /* NetworkService.swift in Sources */,
+				AC35675027FFE28100E50491 /* DishLandscapeCollectionViewCell.swift in Sources */,
+				AC36644B27FECB1500F04985 /* String+Extension.swift in Sources */,
+				AC7E39A527FEDE9300D2FC20 /* CardView.swift in Sources */,
+				AC08113E2801623B00D8A3BD /* ListDishesViewController.swift in Sources */,
+				AC572B472802994900CE8546 /* AppError.swift in Sources */,
+				AC9FA12727FC7A09007DB48E /* OnboardingCollectionViewCell.swift in Sources */,
+				AC7E39AC27FF1EEE00D2FC20 /* Dish.swift in Sources */,
+				AC681A8B281251C500CFDBBF /* UserDefaults+Extension.swift in Sources */,
+				AC7E39A927FF189200D2FC20 /* DishPortraitCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9FA0F827FB32F1007DB48E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9FA10127FB32F1007DB48E /* ProfoodsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9FA10227FB32F1007DB48E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9FA10D27FB32F1007DB48E /* ProfoodsUITestsLaunchTests.swift in Sources */,
+				AC9FA10B27FB32F1007DB48E /* ProfoodsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC9FA0FE27FB32F1007DB48E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC9FA0E527FB32F0007DB48E /* Profoods */;
+			targetProxy = AC9FA0FD27FB32F1007DB48E /* PBXContainerItemProxy */;
+		};
+		AC9FA10827FB32F1007DB48E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC9FA0E527FB32F0007DB48E /* Profoods */;
+			targetProxy = AC9FA10727FB32F1007DB48E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC9FA0EF27FB32F0007DB48E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC9FA0F027FB32F0007DB48E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC9FA0F427FB32F1007DB48E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC9FA0F527FB32F1007DB48E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC9FA10E27FB32F1007DB48E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC9FA10F27FB32F1007DB48E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC9FA11127FB32F1007DB48E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91A5A27941E009D7C0BC9F8 /* Pods-Profoods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2U3RWM2RK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Profoods/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manohar.Profoods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC9FA11227FB32F1007DB48E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 428E9515D8C0030347059003 /* Pods-Profoods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2U3RWM2RK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Profoods/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manohar.Profoods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC9FA11427FB32F1007DB48E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manohar.ProfoodsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Profoods.app/Profoods";
+			};
+			name = Debug;
+		};
+		AC9FA11527FB32F1007DB48E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manohar.ProfoodsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Profoods.app/Profoods";
+			};
+			name = Release;
+		};
+		AC9FA11727FB32F1007DB48E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manohar.ProfoodsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Profoods;
+			};
+			name = Debug;
+		};
+		AC9FA11827FB32F1007DB48E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manohar.ProfoodsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Profoods;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC9FA0E127FB32F0007DB48E /* Build configuration list for PBXProject "Profoods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9FA10E27FB32F1007DB48E /* Debug */,
+				AC9FA10F27FB32F1007DB48E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC9FA11027FB32F1007DB48E /* Build configuration list for PBXNativeTarget "Profoods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9FA11127FB32F1007DB48E /* Debug */,
+				AC9FA11227FB32F1007DB48E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC9FA11327FB32F1007DB48E /* Build configuration list for PBXNativeTarget "ProfoodsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9FA11427FB32F1007DB48E /* Debug */,
+				AC9FA11527FB32F1007DB48E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC9FA11627FB32F1007DB48E /* Build configuration list for PBXNativeTarget "ProfoodsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9FA11727FB32F1007DB48E /* Debug */,
+				AC9FA11827FB32F1007DB48E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC9FA0DE27FB32F0007DB48E /* Project object */;
+}
