@@ -2,6 +2,7 @@
  <h1 align="center" > Profoods-food-app-IOS </h1>
 </p>
 <img src="App images/Profoods.png" height="50" />
+<img src="App images/Screenshot 2022-09-24 at 10.29.18 AM.png" height="500" />
 <p>
   <h3 align="center">Mobile apps bring you much closer to M-Commerce</h3>
 Research shows that customers are more likely to make a purchase if you provide them with a favorable cashless experience. The lesser you deal in cash more convenient the experience becomes. Mobile apps help you to achieve that very easily. A good restaurant ordering app will have options to accept payment from a variety of gateways. In this way the customer can choose for the most convenient option.
